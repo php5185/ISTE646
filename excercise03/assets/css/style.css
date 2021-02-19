@@ -1,0 +1,94 @@
+/* 
+author: Paola Peralta
+date: 2-18-2021
+Page about Dominican republic to show in ISTE 646 RIT class
+ */
+
+body{
+    margin: 5px 5px;
+}
+
+label{
+    color: blue;
+}
+
+h2{
+    color: blue;
+ 
+    /* display: flex; */
+  text-align: center;
+}
+
+
+.logo{
+    grid-area: logo;
+    
+    width: 150px;
+    margin: auto;
+    /* width: 25%; */
+    opacity: 0.9;
+    
+}
+
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    grid-area: topnav;
+    /* background-color: 726a95; */
+    width: auto;
+    height: auto;
+    /* overflow: hidden; */
+
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+      /* background-color: beige; */
+    float: left;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    width: auto;
+    margin-left: auto;
+    
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: lightgray;
+    color: blue;
+  } 
+
+
+
+
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-areas: "logo topnav";
+    grid-template-columns: 150px 1fr;
+    /* background-color:#ffd9bf;#989933; */
+    /* background-color:#ff9f9f; */
+        
+}
+
+.content{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 200px; */
+  /* border: 3px solid green;  */
+}

@@ -1,0 +1,196 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-image: url('../media/greyBackground.jpg'); */
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 50px;
+    background-color: #276678;
+    /* background-color: d3e0ea; */
+}
+
+/* .wrapper{
+    display: grid;
+    grid-template-areas:"topnav topnav"
+                        "my_name my_name"
+                        "image aboutme"
+                        "contact contact"
+                        "course_work course_work";
+} */
+
+.my_name{
+    grid-area: my_name;
+    text-align: center;
+    color:cadetblue;
+}
+
+h2{
+    text-align: center;
+    color:cadetblue;
+}
+
+.content{
+    background-color: #d3e0ea;
+}
+
+.aboutme{
+    grid-area: aboutme;
+        
+}
+
+p{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+img{
+    border-radius: 50%;
+    /* background-color: d3e0ea; */
+    background-color: #276678;
+    
+  /* width: 40%; */
+  
+}
+
+.image{
+    grid-area: image;
+    /* border-radius: 50%; */
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+    
+}
+
+.contact{
+    grid-area: contact;
+    text-align: center;
+}
+
+.course_work{
+    /* background-color: 1687a7; */
+    grid-area: course_work;
+    background-color: #f6f5f5;
+    display: flex;
+    flex-direction: column;
+}
+
+.excercise{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ind_project{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.group_project{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.course_work a{
+    margin-left: 10px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.course_work a:hover{
+    color: darkblue;
+}
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    grid-area: topnav;
+    /* background-color: 726a95; */
+    width: auto;
+    height: auto;
+    /* overflow: hidden; */
+
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    width: auto;
+    margin-left: auto;
+    
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  /* .topnav a.active {
+    background-color: grey;
+    color: white;
+  } */
+
+
+
+
+
+  @media only screen and (max-width: 700px) {
+
+    .wrapper{
+        display: grid;
+        grid-template-areas:"topnav"
+                            "my_name"
+                            "image"
+                            "aboutme"
+                            "contact"
+                            "course_work";
+    }
+
+    .topnav{
+        grid-area: topnav;
+
+        /* width: auto; */
+        height: auto;
+        position: static;
+        float: right;
+        background: 0 0;
+
+        display: flex;
+        /* align-items: right; */
+        flex-direction: column;
+        /* justify-content: space-around; */    
+        padding-left:0px;
+        width: 250px;
+        margin: auto;
+        text-align: left;
+        
+    }
+
+    .topnav a {
+    
+        /* float: left; */
+        clear: both !important;
+        color: white;
+        text-align: left;
+        padding: 14px 16px;    
+        text-decoration: none;
+        font-size: 25px;
+        width: auto;
+        margin: auto;
+        align-items: center;
+        
+        
+      }
+  }
